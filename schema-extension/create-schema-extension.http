@@ -1,0 +1,14 @@
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-Type: application/json
+
+{
+  "id": "com_company_appstatus",
+  "description": "Custom extension for app install status",
+  "targetTypes": ["Device"],
+  "properties": [
+    {
+      "name": "zoomInstalled",
+      "type": "String"
+    }
+  ]
+}
